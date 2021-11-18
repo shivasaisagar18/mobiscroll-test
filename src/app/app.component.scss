@@ -1,0 +1,65 @@
+.startEndTimePicker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 480px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px 0xp #000;
+    border-radius: 8px;
+}
+
+.startEndTimePicker > div:not(.midHolder) {
+    flex: 0 46%;
+}
+
+.midHolder {
+    color: #2c2b2b;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    flex: 0 20px !important;
+    max-width: 20px;
+}
+
+.timePickerOuter {
+    position: relative;
+}
+
+.material-icons.inputIcon {
+    color: #AEAEAE;
+    font-size: 22px;
+    position: absolute;
+    top: 11px;
+    pointer-events: none;
+    left: 10px;
+    z-index: 999;
+}
+
+.timePickerOuter {
+    ::ng-deep mbsc-input {
+        margin: 0px !important;
+        
+        input {
+            border: 2px solid #C1C1C1;
+            height: 52px;
+            color: #464545;
+            border-radius: 5px;
+            padding: 8px 15px;
+            font-size: 18px;
+            width: 100%;
+            font-weight: 500 !important;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 40px !important;
+            font-size: 16px !important;
+            height: 45px;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+}
