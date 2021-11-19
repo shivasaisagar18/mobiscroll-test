@@ -1,29 +1,6 @@
-<div class="startEndTimePicker">
-  <div class="startTimePicker">
-    <div class="timePickerOuter">
-      <span class="material-icons inputIcon">access_time</span>
-      <mbsc-input
-          #start
-          placeholder="Start Time">
-      </mbsc-input>
-    </div>
-  </div>
-  <div class="midHolder">To</div>
-  <div class="endTimePicker">
-    <div class="timePickerOuter">
-      <span class="material-icons inputIcon">access_time</span>
-      <mbsc-input
-          #end
-          placeholder="End Time">
-      </mbsc-input>
-    </div>
-  </div>
-</div>
 
-<mbsc-datepicker
-    [controls]="['time']"
-    select="range"
-    [startInput]="start"
-    [endInput]="end"
-    [touchUi]="true">
-</mbsc-datepicker>
+<a href="/calendar">Calendar</a>
+<br>
+<a href="/timepicker">Timepicker</a>
+
+<router-outlet></router-outlet>
